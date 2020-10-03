@@ -12,6 +12,7 @@
     --section-border-color: solid #ECECEC;
     --card-border-color: solid #EEEEEE;
     --hero-bg: #C4C4C4;
+    --icon-color: #AFB1B8;
 }
 
 *,
@@ -131,16 +132,17 @@ img {
     color: var(--description-color);
 }
 
-.contact-list-item {
+.contact-list-link{
     display: flex;
     align-items: center;
+    height: 16px;
 }
 
 .contact-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-list-icon {
+.contact-list-svg {
     margin-right: 10px;
 }
 
@@ -156,15 +158,19 @@ img {
     height: 16px;;
 }
 
-.contact-list-icon:hover {
-    fill: var(--accent-color);
-} 
-
-
-.navigation-list-link:hover,
-.navigation-list-link:focus,
 .contact-list-link:hover,
 .contact-list-link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.contact-list-link:hover .contact-list-svg,
+.contact-list-link:focus .contact-list-svg {
+    fill: var(--accent-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
     color: var(--accent-color);
 }
 
@@ -177,9 +183,43 @@ img {
 /*  ============ FOOTER ============ */
 
 .footer {
-    padding: 60px 0;
+    padding-top: 60px;
     min-height: 252px;
     background-color: var(--background-dark-color);
+}
+
+.footer .container {
+    display: flex;
+    align-items: initial;
+}
+
+.join-us {
+    width: 206px;
+    height: 80px;
+}
+
+.join-us-slogan {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-light-color);
+}
+
+.footer .social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer .social-list-svg {
+    fill: var(--title-light-color);
+}
+
+.footer-address {
+    align-content: center;
+    margin-right: 70px;
 }
 
 .footer .logo-reverse {
@@ -233,14 +273,18 @@ img {
 /*  ============ HERO ============ */
 
 .hero {
-    padding: 200px 0;
-    min-height: 600px;
+    padding-top: 247px;
+    padding-bottom: 200px;  
     text-align: center;
+    background-size: 1600px 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-top: 1px var(--section-border-color);
 }
 
 .hero-title {
@@ -273,7 +317,8 @@ img {
   /*  ============ ADVANTAGES  ============ */
 
 .advantages {
-    padding: 94px 0;
+    padding-top: 47px;
+    padding-bottom: 71px;
 }
 
 .advantages-list {
@@ -399,8 +444,114 @@ img {
     line-height: 1.188;
     letter-spacing: 0.03em;
     color: var(--description-color);
+    margin-bottom: 16px;
 }
+
+.social-list {
+    display: flex;
+    justify-content: center;
+ }
+
+.social-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+}
+
+.social-list svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color)
+}
+
+.social-list-link:hover .social-list-svg,
+.social-list-link:focus .social-list-svg {
+    fill: var(--title-light-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
 /*  ============ END TEAM ============ */
+
+/*  ============ START CLIENTS ============ */
+.clients {
+    padding: 94px 0;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.clients-list-svg {
+    fill: var(--icon-color);
+}
+
+.logo1 {
+    width: 44.27px;
+    height: 49.23px;
+}
+
+.logo2 {
+    width: 40px;
+    height: 52px;
+}
+
+.logo3 {
+    width: 41px;
+    height: 42.6px;
+}
+
+.logo4 {
+    width: 79.66px;
+    height: 42.02px;
+}
+
+.logo5 {
+    width: 59px;
+    height: 47px;
+}
+
+.logo6 {
+    width: 88.48px;
+    height: 45.44px;
+}
+
+.clients-list-link:hover .clients-list-svg,
+.clients-list-link:focus .clients-list-svg {
+    fill: var(--accent-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border-color: var(--accent-color);
+}
+
+/*  ============ END CLIENTS ============ */
 
 /*-------END STUDIO PAGE-------*/
 
