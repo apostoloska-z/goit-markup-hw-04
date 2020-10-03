@@ -91,7 +91,6 @@ img {
 }
 
 .header a {
-    display:block;
     padding: 15px 0;
 }
 
@@ -132,7 +131,7 @@ img {
     color: var(--description-color);
 }
 
-.contact-list-link{
+.contact-list a{
     display: flex;
     align-items: center;
     height: 16px;
@@ -190,31 +189,7 @@ img {
 
 .footer .container {
     display: flex;
-    align-items: initial;
-}
-
-.join-us {
-    width: 206px;
-    height: 80px;
-}
-
-.join-us-slogan {
-    display: block;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-light-color);
-}
-
-.footer .social-list-link {
-    background-color: rgba(255, 255, 255, 0.1);;
-}
-
-.footer .social-list-svg {
-    fill: var(--title-light-color);
+    align-items: baseline;
 }
 
 .footer-address {
@@ -263,6 +238,30 @@ img {
 .address-link:hover,
 .address-link:focus {
     color: var(--accent-color);
+}
+
+.join-us {
+    width: 206px;
+    height: 80px;
+}
+
+.join-us-slogan {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-light-color);
+}
+
+.footer .social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer .social-list-svg {
+    fill: var(--title-light-color);
 }
 
 /*  ============ END FOOTER ============ */
@@ -619,6 +618,11 @@ img {
 
 .projects-list-link {
     display: block;
+}
+
+.projects-list a:hover,
+.projects-list a:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-card-content {
