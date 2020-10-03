@@ -11,6 +11,7 @@
     --semitransparent-address-color:  rgba(255, 255, 255, 0.6);
     --section-border-color: solid #ECECEC;
     --card-border-color: solid #EEEEEE;
+    --hero-bg: #C4C4C4;
 }
 
 *,
@@ -130,9 +131,35 @@ img {
     color: var(--description-color);
 }
 
+.contact-list-item {
+    display: flex;
+    align-items: center;
+}
+
 .contact-list-item:not(:last-child) {
     margin-right: 50px;
 }
+
+.contact-list-icon {
+    margin-right: 10px;
+}
+
+.envelope {
+    fill: var(--description-color);
+    width: 16px;
+    height: 12px;
+}
+
+.smartphone {
+    fill: var(--description-color);
+    width: 10px;
+    height: 16px;;
+}
+
+.contact-list-icon:hover {
+    fill: var(--accent-color);
+} 
+
 
 .navigation-list-link:hover,
 .navigation-list-link:focus,
@@ -209,7 +236,11 @@ img {
     padding: 200px 0;
     min-height: 600px;
     text-align: center;
-    background-color: var(--background-dark-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-bg.jpg);
 }
 
 .hero-title {
@@ -255,6 +286,40 @@ img {
 
 .advantages-list-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.advantages-list-subtitle::before {
+    display:block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-light-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.details::before {
+    background-image: url(../images/svg/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.punctuality::before {
+    background-image: url(../images/svg/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.planning::before {
+    background-image: url(../images/svg/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies::before {
+    background-image: url(../images/svg/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .advantages-list-subtitle {
