@@ -76,13 +76,12 @@ img {
 
 /*  ============ HEADER ============ */
 
-.header {
-    padding: 25px 0;
-}
-
 .header .container {
     display: flex;
+    padding: 25px 0;
+    height: 80px;
     align-items: center;
+    justify-content: center;
 }
 
 .navigation {
@@ -271,18 +270,16 @@ img {
 /*  ============ HERO ============ */
 
 .hero {
-    padding-top: 247px;
-    padding-bottom: 200px;  
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 200px 0;
     text-align: center;
-    background-size: 1600px 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-bg.jpg);
-    background-position: bottom;
     background-repeat: no-repeat;
-    border-top: 1px var(--section-border-color);
 }
 
 .hero-title {
@@ -315,8 +312,7 @@ img {
   /*  ============ ADVANTAGES  ============ */
 
 .advantages {
-    padding-top: 47px;
-    padding-bottom: 71px;
+    padding: 94px 0;
 }
 
 .advantages-list {
