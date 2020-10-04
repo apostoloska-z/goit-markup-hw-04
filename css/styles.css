@@ -118,6 +118,15 @@ img {
     color: var(--title-dark-color);
 }
 
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: var(--accent-color);
+}
+
+.active-page {
+    color: var(--accent-color);
+}
+
 .contact-list {
     display:flex;
     margin-left: auto;
@@ -131,7 +140,7 @@ img {
     color: var(--description-color);
 }
 
-.contact-list a{
+.contact-list a {
     display: flex;
     align-items: center;
     height: 16px;
@@ -143,16 +152,15 @@ img {
 
 .contact-list-svg {
     margin-right: 10px;
+    fill: var(--description-color);
 }
 
 .envelope {
-    fill: var(--description-color);
     width: 16px;
     height: 12px;
 }
 
 .smartphone {
-    fill: var(--description-color);
     width: 10px;
     height: 16px;;
 }
@@ -160,7 +168,6 @@ img {
 .contact-list-link:hover,
 .contact-list-link:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 .contact-list-link:hover .contact-list-svg,
@@ -168,21 +175,13 @@ img {
     fill: var(--accent-color);
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-    color: var(--accent-color);
-}
-
-.active-page {
-    color: var(--accent-color);
-}
 
 /*  ============ END HEADER ============ */
 
 /*  ============ FOOTER ============ */
 
 .footer {
-    padding-top: 60px;
+    padding: 60px 0;
     min-height: 252px;
     background-color: var(--background-dark-color);
 }
@@ -451,7 +450,7 @@ img {
     justify-content: center;
  }
 
-.social-list li:not(:last-child) {
+.social-list-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -470,14 +469,14 @@ img {
     fill: var(--icon-color)
 }
 
-.social-list-link:hover .social-list-svg,
-.social-list-link:focus .social-list-svg {
-    fill: var(--title-light-color);
-}
-
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-svg,
+.social-list-link:focus .social-list-svg {
+    fill: var(--title-light-color);
 }
 
 /*  ============ END TEAM ============ */
@@ -620,8 +619,8 @@ img {
     display: block;
 }
 
-.projects-list a:hover,
-.projects-list a:focus {
+.projects-list-link:hover,
+.projects-list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
